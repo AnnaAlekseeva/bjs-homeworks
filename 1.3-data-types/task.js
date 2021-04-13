@@ -1,5 +1,5 @@
-function calculateTotalMortgage(percent, contribution, amount, date) {
 "use strict";
+function calculateTotalMortgage(percent, contribution, amount, date) {
 let bet = percent/100/12;
 let firstContribution = parseFloat(contribution);
 let credit = parseFloat(amount);
@@ -17,12 +17,10 @@ return totalAmount;
 }
 
 function getGreeting(name) {
- "use strict";   
- let user = name;
  let greeting;
 
-if (user === "" || user === undefined) {
-   user = "Аноним"; 
+if (name === "" || name === undefined) {
+   name = "Аноним"; 
 }
 
  greeting = `Привет, мир! Меня зовут ${user}.`;
